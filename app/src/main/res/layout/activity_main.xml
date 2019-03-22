@@ -9,15 +9,15 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="44dp"
-        android:background="#FFFFFF"
+        android:background="#303F9F"
         android:gravity="center"
         android:text="标题"
-        android:textColor="#303F9F"
+        android:textColor="#FFFFFF"
         android:textSize="17sp"/>
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="0.5dp"
+        android:layout_height="1.0dp"
         android:background="#EEEEEE"/>
 
     <com.github.xubo.ceilinglayout.CeilingLayout
@@ -39,7 +39,7 @@
             android:layout_height="46dp"
             android:background="#FFFFFF"
             android:orientation="horizontal"
-            app:bottom_line_height="0.5dp"
+            app:bottom_line_height="1.0dp"
             app:slider_color="#FF6D32"
             app:slider_height="2dp"
             app:slider_round="1dp"
