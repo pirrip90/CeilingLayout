@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SliderRadioGroup">
+        <!-- 滑块圆角 -->
+        <attr name="slider_round" format="dimension"/>
+        <!-- 滑块高度 -->
+        <attr name="slider_height" format="dimension"/>
+        <!-- 滑块颜色 -->
+        <attr name="slider_color" format="color"/>
+        <!-- 滑块宽度占比 -->
+        <attr name="slider_width_weight" format="float"/>
+        <!-- 底部线高 -->
+        <attr name="bottom_line_height" format="dimension"/>
+        <!-- 底部线颜色 -->
+        <attr name="bottom_line_color" format="color"/>
+    </declare-styleable>
+</resources>

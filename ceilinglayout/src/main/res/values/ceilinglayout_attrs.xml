@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CeilingLayout">
+        <!-- 吸顶子view的位置索引 -->
+        <attr name="ceiling_childIndex" format="integer"/>
+    </declare-styleable>
+
+</resources>

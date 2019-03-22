@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="标题"
+        android:textColor="#303F9F"
+        android:textSize="17sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#EEEEEE"/>
+
+    <com.github.xubo.ceilinglayout.CeilingLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F9FAFC"
+        android:orientation="vertical"
+        app:ceiling_childIndex="1">
+
+        <ImageView
+            android:id="@+id/main_image_iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/image"/>
+
+        <com.github.xubo.ceilinglayout.sample.SliderRadioGroup
+            android:id="@+id/main_srg"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            app:bottom_line_height="0.5dp"
+            app:slider_color="#FF6D32"
+            app:slider_height="2dp"
+            app:slider_round="1dp"
+            app:slider_width_weight="1.5">
+
+            <RadioButton
+                android:id="@+id/main_tab1_rb"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="RecyclerView"
+                android:textColor="@color/radio_color"
+                android:textSize="14sp"/>
+
+
+            <RadioButton
+                android:id="@+id/main_tab2_rb"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="NestedScrollView"
+                android:textColor="@color/radio_color"
+                android:textSize="14sp"/>
+        </com.github.xubo.ceilinglayout.sample.SliderRadioGroup>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/main_content_vp"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.github.xubo.ceilinglayout.CeilingLayout>
+</LinearLayout>
