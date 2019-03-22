@@ -4,10 +4,10 @@
  <div align=center>![结合ViewGroup使用例子](https://github.com/pirrip90/CeilingLayout/blob/master/screen/screen2.gif)</div>
 
 ## 2、模型图
- <div align="center"><img src="https://github.com/pirrip90/CeilingLayout/blob/master/screen/screen1.png" width = "283" height = "419"/></div>
-
 `CeilingLayout`是`LinearLayout`的子类,使用方法与竖向`LinearLayout`一致。
 
+ <div align="center"><img src="https://github.com/pirrip90/CeilingLayout/blob/master/screen/screen1.png" width = "283" height = "419"/></div>
+ 
 如模型图所示，`CeilingLayout`竖向排列子View时，吸顶子View之后有且只能再排列一个子View，一般为联动View或包裹住联动View的父容器。
 
 ## 3、xml属性
