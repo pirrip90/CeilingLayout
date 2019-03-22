@@ -1,12 +1,12 @@
 ## 1、描述
 **`CeilingLayout`用来控制子View的吸顶联滑，目前支持联滑控件：`NestedScrollView`、`RecyclerView`、`SmartRefreshLayout`；只需要在xml里配置需要吸顶子View的位置索引就能自动实现吸顶联滑效果。**
 
-  <div align="center"><img src="https://github.com/pirrip90/CeilingLayout/blob/master/screen/screen2.gif" width = "180" height = "370"/></div>
+  <div align="left"><img src="https://github.com/pirrip90/CeilingLayout/blob/master/screen/screen2.gif" width = "300" height = "617"/></div>
 
 ## 2、模型图
 `CeilingLayout`是`LinearLayout`的子类,使用方法与竖向`LinearLayout`一致。
 
- <div align="center"><img src="https://github.com/pirrip90/CeilingLayout/blob/master/screen/screen1.png" width = "283" height = "419"/></div>
+ <div align="left"><img src="https://github.com/pirrip90/CeilingLayout/blob/master/screen/screen1.png" width = "180" height = "266"/></div>
  
 如模型图所示，`CeilingLayout`竖向排列子View时，吸顶子View之后有且只能再排列一个子View，一般为联动View或包裹住联动View的父容器。
 
