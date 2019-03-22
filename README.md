@@ -38,6 +38,8 @@
     </com.github.xubo.statuslayout.StatusLayout>
 ```
 
+## 6、sample
+
 |示例|
 |:---:|
 |  <img src="https://github.com/pirrip90/CeilingLayout/blob/master/screen/screen2.gif" width = "300" height = "617"/> | 
@@ -52,7 +54,7 @@ dependencies {
 }
 ```
 
-## 6、注意事项
+## 7、注意事项
 ### 1）、支持联动View表
 - [x] `NestedScrollView`
 - [x] `RecyclerView`
