@@ -15,11 +15,6 @@
         android:textColor="#FFFFFF"
         android:textSize="17sp"/>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1.0dp"
-        android:background="#EEEEEE"/>
-
     <com.github.xubo.ceilinglayout.CeilingLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
