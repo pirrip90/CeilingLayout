@@ -5,7 +5,9 @@
 
 ## 2、模型图
 ![模型](https://github.com/pirrip90/CeilingLayout/blob/master/screen/screen1.png)
+
 CeilingLayout`是`LinearLayout`的子类,使用方法与竖向`LinearLayout`一致。
+
 如模型图所示，`CeilingLayout`竖向排列子View时，吸顶子View之后有且只能再排列一个子View，一般为联动View或包裹住联动View的父容器。
 
 ## 3、xml属性
@@ -49,16 +51,16 @@ dependencies {
 ```
 
 ## 6、注意事项
-###1、支持联动View表
+### 1、支持联动View表
 - [x] NestedScrollView
 - [x] RecyclerView
 - [x] SmartRefreshLayout
 
-###2、错误的位置索引配置
+### 2、错误的位置索引配置
 > * 不存在的子View位置索引
 > * 位置索引为0,索引为0吸顶毫无意义
 
-###3、SmartRefreshLayout使用注意
+### 3、SmartRefreshLayout使用注意
 请使用`CeilingSmartRefreshLayout`代替`SmartRefreshLayout`,否则`SmartRefreshLayout`联动的支持将失效
 
 
