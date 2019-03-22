@@ -4,7 +4,7 @@
 <div align=center>![结合ViewGroup使用例子](https://github.com/pirrip90/CeilingLayout/blob/master/screen/screen2.gif)</div>
 
 ## 2、模型图
-<div align=center>![模型](https://github.com/pirrip90/CeilingLayout/blob/master/screen/screen1.png)</div>
+<img src="https://github.com/pirrip90/CeilingLayout/blob/master/screen/screen1.png" width = 80% height = 80%  div align=right/>
 
 `CeilingLayout`是`LinearLayout`的子类,使用方法与竖向`LinearLayout`一致。
 
