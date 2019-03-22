@@ -4,7 +4,7 @@
 <div align=center>![结合ViewGroup使用例子](https://github.com/pirrip90/CeilingLayout/blob/master/screen/screen2.gif)</div>
 
 ## 2、模型图
-<img src="https://github.com/pirrip90/CeilingLayout/blob/master/screen/screen1.png" width = 80% height = 80%  div align=right/>
+<img src="https://github.com/pirrip90/CeilingLayout/blob/master/screen/screen1.png" width = "283" height = "419" div align=center />
 
 `CeilingLayout`是`LinearLayout`的子类,使用方法与竖向`LinearLayout`一致。
 
@@ -61,7 +61,7 @@ dependencies {
 > * 位置索引为0，索引为0吸顶毫无意义
 
 ### 3）、SmartRefreshLayout使用注意
-请使用`CeilingSmartRefreshLayout`代替`SmartRefreshLayout`,否则`SmartRefreshLayout`联动的支持将失效
+请使用`CeilingSmartRefreshLayout`代替`SmartRefreshLayout`，否则`SmartRefreshLayout`联动的支持将失效
 
 
 
