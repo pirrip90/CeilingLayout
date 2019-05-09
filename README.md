@@ -1,5 +1,5 @@
 ## 1、描述
-**`CeilingLayout`用来控制子View的吸顶联滑，目前支持联滑控件：`NestedScrollView`、`RecyclerView`、`SmartRefreshLayout`；只需要在xml里配置需要吸顶子View的位置索引就能自动实现吸顶联滑效果。**
+**`CeilingLayout`用来控制子View的吸顶联滑，理论上支持实现了NestedScrollingChild的联滑控件，如`NestedScrollView`、`RecyclerView`、`SmartRefreshLayout`等；只需要在xml里配置需要吸顶子View的位置索引就能自动实现吸顶联滑效果。**
 
 ## 2、模型图
 `CeilingLayout`是`LinearLayout`的子类,使用方法与竖向`LinearLayout`一致。
@@ -44,7 +44,7 @@ add the dependency:
 dependencies {
     ...
     
-    implementation 'com.github.xubo.ceilinglayout:CeilingLayout:1.0.1'
+    implementation 'com.github.xubo.ceilinglayout:CeilingLayout:1.1.0'
 }
 ```
 
@@ -55,7 +55,7 @@ dependencies {
 |  <img src="https://github.com/pirrip90/CeilingLayout/blob/master/screen/screen2.gif" width = "300" height = "617"/> | 
 
 ## 7、注意事项
-### 1）、支持联动View表
+### 1）、已验证联动View表
 - [x] `NestedScrollView`
 - [x] `RecyclerView`
 - [x] `SmartRefreshLayout`
@@ -64,8 +64,7 @@ dependencies {
 > * 不存在的子View位置索引
 > * 位置索引为0，索引为0吸顶毫无意义
 
-### 3）、SmartRefreshLayout使用注意
-请使用`CeilingSmartRefreshLayout`代替`SmartRefreshLayout`，否则`SmartRefreshLayout`联动的支持将失效
+
 
 
 
