@@ -44,7 +44,7 @@ add the dependency:
 dependencies {
     ...
     
-    implementation 'com.github.xubo.ceilinglayout:CeilingLayout:1.1.0'
+    implementation 'com.github.xubo.ceilinglayout:CeilingLayout:1.1.1'
 }
 ```
 

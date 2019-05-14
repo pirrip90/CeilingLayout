@@ -94,7 +94,11 @@ public class CeilingLayout extends LinearLayout implements NestedScrollingParent
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        //最小控制高
+        int minMeasuredHeight = MeasureSpec.getSize(heightMeasureSpec);
+        heightMeasureSpec = MeasureSpec.makeMeasureSpec(Integer.MAX_VALUE >> 1, MeasureSpec.EXACTLY);
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+        int measuredWidth = getMeasuredWidth();
         int childCount = getChildCount();
         if (ceilingChildIndex < 0 || ceilingChildIndex >= childCount) {
             throw new IllegalStateException("吸顶子View位置索引错误,CeilingLayout没有索引为" + ceilingChildIndex + "的子View");
@@ -110,18 +114,21 @@ public class CeilingLayout extends LinearLayout implements NestedScrollingParent
                     }
                     LayoutParams params = (LayoutParams) childView.getLayoutParams();
                     ceilingHeight += (childView.getMeasuredHeight() + params.topMargin + params.bottomMargin);
-                    scrollRange = ceilingHeight - ceilingOffset;
-                    if (scrollRange < 0) {
-                        throw new IllegalStateException("CeilingLayout偏移高度不能大于吸顶高度");
-                    }
+                }
+                scrollRange = ceilingHeight - ceilingOffset;
+                if (scrollRange < 0) {
+                    throw new IllegalStateException("CeilingLayout偏移高度不能大于吸顶高度");
                 }
                 View ceilingChildView = getChildAt(ceilingChildIndex);
-                LayoutParams params = (LayoutParams) ceilingChildView.getLayoutParams();
-                int measuredWidth = MeasureSpec.getSize(widthMeasureSpec);
-                int measuredHeight = MeasureSpec.getSize(heightMeasureSpec);
-                int lastChildViewHeight = measuredHeight - ceilingChildView.getMeasuredHeight() - params.topMargin - params.bottomMargin;
+                LayoutParams ceilingChildParams = (LayoutParams) ceilingChildView.getLayoutParams();
+                int measuredHeight = minMeasuredHeight;
+                if (ceilingHeight + ceilingChildView.getMeasuredHeight() + ceilingChildParams.topMargin + ceilingChildParams.bottomMargin > minMeasuredHeight) {  //最小控制高无法排下
+                    measuredHeight = ceilingHeight + ceilingChildView.getMeasuredHeight() + ceilingChildParams.topMargin + ceilingChildParams.bottomMargin;
+                }
+                setMeasuredDimension(measuredWidth, measuredHeight);
 
                 //最后子View重新分配高度
+                int lastChildViewHeight = getMeasuredHeight() - ceilingChildView.getMeasuredHeight() - ceilingChildParams.topMargin - ceilingChildParams.bottomMargin - ceilingOffset;
                 View lastChildView = getChildAt(ceilingChildIndex + 1);
                 int lastChildWidthMeasureSpec = MeasureSpec.makeMeasureSpec(measuredWidth, MeasureSpec.EXACTLY);
                 int lastChildHeightMeasureSpec = MeasureSpec.makeMeasureSpec(lastChildViewHeight, MeasureSpec.EXACTLY);

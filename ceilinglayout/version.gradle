@@ -2,5 +2,5 @@ ext {
     //版本code
     versionCode = 3
     //版本名
-    versionName = "1.1.0"
+    versionName = "1.1.1"
 }
