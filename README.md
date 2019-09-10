@@ -61,8 +61,8 @@ dependencies {
 - [x] `SmartRefreshLayout`
 
 ### 2)、SmartRefreshLayout-1.1.0已不支持联动
-由于SmartRefreshLayout在1.1.0注释了NestedScrollingChild接口实现，表明无法支持与父View的嵌套滑动，所以CeilingLayout目前无法支持SmartRefreshLayout-1.1.0版本联动。
-如果需要和SmartRefreshLayout联动，建议把SmartRefreshLayout降级到1.0.5。
+由于`SmartRefreshLayout`在`1.1.0`注释了`NestedScrollingChild`接口实现，表明无法支持与Parent View的嵌套滑动，所以`CeilingLayout`目前无法支持`SmartRefreshLayout-1.1.0`联动。
+如果需要与`SmartRefreshLayout`联动，建议把`SmartRefreshLayout`降级到`1.0.5`。
 
 ### 3)、错误的位置索引配置
 > * 不存在的子View位置索引
