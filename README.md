@@ -55,16 +55,16 @@ dependencies {
 |  <img src="https://github.com/pirrip90/CeilingLayout/blob/master/screen/screen2.gif" width = "300" height = "617"/> | 
 
 ## 7、注意事项
-### 1）、已验证联动View表
+### 1)、已验证联动View表
 - [x] `NestedScrollView`
 - [x] `RecyclerView`
 - [x] `SmartRefreshLayout`
 
-### 2）、SmartRefreshLayout-1.1.0已不支持联动
+### 2)、SmartRefreshLayout-1.1.0已不支持联动
 由于SmartRefreshLayout在1.1.0注释了NestedScrollingChild接口实现，表明无法支持与父View的嵌套滑动，所以CeilingLayout目前无法支持SmartRefreshLayout-1.1.0版本联动。
 如果需要和SmartRefreshLayout联动，建议把SmartRefreshLayout降级到1.0.5。
 
-### 3）、错误的位置索引配置
+### 3)、错误的位置索引配置
 > * 不存在的子View位置索引
 > * 位置索引为0，索引为0吸顶毫无意义
 
